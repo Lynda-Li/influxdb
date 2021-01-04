@@ -193,7 +193,6 @@ func NewCommand(v *viper.Viper) (*cobra.Command, error) {
 			Default:  "",
 			Desc:     "primary username",
 			Short:    'u',
-			Required: true,
 		},
 		{
 			DestP:    &options.target.password,
@@ -201,7 +200,6 @@ func NewCommand(v *viper.Viper) (*cobra.Command, error) {
 			Default:  "",
 			Desc:     "password for username",
 			Short:    'p',
-			Required: true,
 		},
 		{
 			DestP:    &options.target.orgName,
@@ -209,7 +207,6 @@ func NewCommand(v *viper.Viper) (*cobra.Command, error) {
 			Default:  "",
 			Desc:     "primary organization name",
 			Short:    'o',
-			Required: true,
 		},
 		{
 			DestP:    &options.target.bucket,
@@ -217,7 +214,6 @@ func NewCommand(v *viper.Viper) (*cobra.Command, error) {
 			Default:  "",
 			Desc:     "primary bucket name",
 			Short:    'b',
-			Required: true,
 		},
 		{
 			DestP:   &options.target.retention,
